@@ -5,18 +5,18 @@
 
 // TIP: No accedas a 'id' con punto (.) o con corchetes ([]).
 
-// const obj = {
-//     id: 1,
-//     first_name: "Noelle",
-//     last_name: "Rosenblatt",
-//     email: "nrosenblatt0@apache.org",
-//     gender: "Female",
-//     ip_address: "97.196.115.101"
-// }
+const obj = {
+  id: 1,
+  first_name: "Noelle",
+  last_name: "Rosenblatt",
+  email: "nrosenblatt0@apache.org",
+  gender: "Female",
+  ip_address: "97.196.115.101",
+};
 
-// const hasId = ({ id }) => (id != undefined);
+const hasId = ({ id }) => id != undefined;
 
-// console.log(hasId(obj));
+console.log(hasId(obj));
 
 // hasId(obj)
 
@@ -26,11 +26,11 @@
 
 // TIP: No utilices el corchete ([]) para acceder a la posición 0.
 
-// const names = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
+const names = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
 
-// const head = ([first]) => first;
+const head = ([first]) => first;
 
-// console.log(head(names));
+console.log(head(names));
 
 // tail
 // Implementa una función llamada tail tal que, dado un array como entrada,
@@ -38,11 +38,11 @@
 
 //TIP: No se debe modificar el array de entrada. Piensa en destructuring y rest.
 
-// const names = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
+const names2 = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
 
-// const tail = ([, ...name]) => name;
+const tail = ([, ...name]) => name;
 
-// console.log(tail(names));
+console.log(tail(names2));
 
 // swapFirstToLast
 // Implementa una función llamada swapFirstToLast tal que, dado un array como
@@ -51,11 +51,11 @@
 
 //  No se debe modificar el array de entrada. Piensa en destructuring y rest.
 
-// const names = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
+const names3 = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
 
-// const swapFirstToLast = ([first, ...names]) => [...names, first];
+const swapFirstToLast = ([first, ...names]) => [...names, first];
 
-// console.log(swapFirstToLast(names));
+console.log(swapFirstToLast(names3));
 
 // exclueId
 // Implementa una función llamada excludeId tal que, dado un objeto como entrada,
@@ -63,18 +63,18 @@
 
 // TIP: No modifiques el objeto de entrada. Piensa en destructuring y rest.
 
-// const obj = {
-//     id: 1,
-//     first_name: "Noelle",
-//     last_name: "Rosenblatt",
-//     email: "nrosenblatt0@apache.org",
-//     gender: "Female",
-//     ip_address: "97.196.115.101"
-// }
+const obj2 = {
+  id: 1,
+  first_name: "Noelle",
+  last_name: "Rosenblatt",
+  email: "nrosenblatt0@apache.org",
+  gender: "Female",
+  ip_address: "97.196.115.101",
+};
 
-// const exclueId = ({ id, ...rest }) => rest;
+const exclueId = ({ id, ...rest }) => rest;
 
-// console.log(exclueId(obj));
+console.log(exclueId(obj2));
 
 // wordsStartingWithA
 // Implementa una función llamada wordsStartingWithA tal que, dado un array de palabras
@@ -82,19 +82,20 @@
 
 // TIP: No utilices bucles.
 
-// const flowers = ["Amapola", "Rosa", "Acacias", "Margarita"];
+const flowers = ["Amapola", "Rosa", "Acacias", "Margarita"];
 
-// const wordsStartingWithA = flowers =>  flowers.filter(([flower]) => flower.toLowerCase() == 'a') ;
+const wordsStartingWithA = (flowers) =>
+  flowers.filter(([flower]) => flower.toLowerCase() == "a");
 
-// console.log(wordsStartingWithA(flowers));
+console.log(wordsStartingWithA(flowers));
 
 // concat
 // Implementa una función llamada concat tal que admita múltiples argumentos de tipo string y
 // devuelva otro string con la concatenación de todos, separados por |.
 
-// const concat = (...items) => items.join(" | ");
+const concat = (...items) => items.join(" | ");
 
-// console.log(concat('hola', 'adios','bienvenido','hasta luego'));
+console.log(concat("hola", "adios", "bienvenido", "hasta luego"));
 
 // multArray
 // Implementa una función llamada multArray que admita un array de números (arr) y otro parámetro
@@ -102,19 +103,20 @@
 
 // TIP: No utilices bucles.
 
-// const array = [1, 2, 3, 4, 5, 6, 7];
+const array = [1, 2, 3, 4, 5, 6, 7];
 
-// const multArray = (array, n) => array.map(item => item * n);
+const multArray = (array, n) => array.map((item) => item * n);
 
-// console.log(multArray(array, 3));
+console.log(multArray(array, 3));
 
 // calcMult
 // Implementa una función llamada calcMult que admita múltiples números como argumento y devuelva
 // como resultado el producto de todos ellos.
 
-// const calcMult = (...numbers) => numbers.reduce((acc, number) => acc * number , 1);
+const calcMult = (...numbers) =>
+  numbers.reduce((acc, number) => acc * number, 1);
 
-// console.log(calcMult(2,4,6,8,10));
+console.log(calcMult(2, 4, 6, 8, 10));
 
 // swapFirstSecond
 // Implementa una función swapFirstSecond tal que dado un array, devuelva un nuevo array donde el
@@ -122,11 +124,11 @@
 
 // TIP: No modifiques el array de entrada original.
 
-// const names = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
+const names4 = ["Manolo", "Mari Carmen", "Nicolás", "Carmen"];
 
-// const swapFirstSecond = ([first, second, ...rest]) => [second, first, ...rest];
+const swapFirstSecond = ([first, second, ...rest]) => [second, first, ...rest];
 
-// console.log(swapFirstSecond(names));
+console.log(swapFirstSecond(names));
 
 // firstEqual
 // Implementa una función firstEqual tal que admita multiples strings como argumento de entrada así
@@ -135,29 +137,30 @@
 
 // TIP: No utilices bucles. No accedas al primer carácter con corchetes ([]).
 
-// const firstEqual = (c, ...strings) => strings.every(([first]) => first.toLowerCase() === c);
+const firstEqual = (c, ...strings) =>
+  strings.every(([first]) => first.toLowerCase() === c);
 
-// console.log(firstEqual("a", "Amapola", "azul", "anciano", "Andar"));
+console.log(firstEqual("a", "Amapola", "azul", "anciano", "Andar"));
 
 //longest
 //Implementa una función longest que admita múltiples arrays como entrada, y devuelva el array más largo.
 
 //TIP: No utilices bucles. Hay diversas formas de hacerlo.
 
-// const longest = (...arrays) =>
-//   arrays
-//     .sort((a, b) => (a.length > b.length ? -1 : 1))
-//     .reduce((array) => array);
+const longest = (...arrays) =>
+  arrays
+    .sort((a, b) => (a.length > b.length ? -1 : 1))
+    .reduce((array) => array);
 
-// console.log(
-//   longest(
-//     [1, 2],
-//     [1, 2, 3, 4, 5, 6, 7],
-//     [1, 2, 3, 4],
-//     [1, 2, 3, 4, 5],
-//     [1, 2, 3, 4, 5, 6]
-//   )
-// );
+console.log(
+  longest(
+    [1, 2],
+    [1, 2, 3, 4, 5, 6, 7],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5, 6]
+  )
+);
 
 // searchInStringV1
 // Implementa una función llamada searchInStringV1 tal que dado un string como parámetro y también un carácter,
@@ -166,9 +169,10 @@
 
 // TIP: Convierte el string a un array mediante Array.from().
 
-// const searchInStringV1 = (string, c) => Array.from(string).reduce((acc, letter) => (letter === c ? acc + 1 : acc), 0);
+const searchInStringV1 = (string, c) =>
+  Array.from(string).reduce((acc, letter) => (letter === c ? acc + 1 : acc), 0);
 
-// console.log(searchInStringV1("amapola", "a"));
+console.log(searchInStringV1("amapola", "a"));
 
 // searchInStringV2
 // Implementa el mismo ejercicio de antes, llamando a la función searchInStringV2, encontrando otra alternativa sin usar reduce.
@@ -177,13 +181,15 @@
 
 // TIP: Convierte el string a un array mediante Array.from().
 
-// const searchInStringV2 = (string, c) => {
-//     let acc = 0;
-//     Array.from(string).map(letter => { if (letter === c) acc++ });
-//     return acc;
-// }
+const searchInStringV2 = (string, c) => {
+  let acc = 0;
+  Array.from(string).map((letter) => {
+    if (letter === c) acc++;
+  });
+  return acc;
+};
 
-// console.log(searchInStringV2('amapolaaaaa', 'a'));
+console.log(searchInStringV2("amapolaaaaa", "a"));
 
 // sortCharacters
 // Implementa una función llamada sortCharacters tal que dado un string, lo devuelva con sus letras ordenadas
@@ -193,12 +199,12 @@
 
 // TIP: Convierte el string a un array mediante Array.from().
 
-// const sortCharacters = (string) =>
-//   Array.from(string)
-//     .sort((a, b) => (a > b ? 1 : -1))
-//     .join("");
+const sortCharacters = (string) =>
+  Array.from(string)
+    .sort((a, b) => (a > b ? 1 : -1))
+    .join("");
 
-// console.log(sortCharacters("manolo"));
+console.log(sortCharacters("manolo"));
 
 //  shout
 // Implementa una función llamada shout tal que, dadas múltiples palabras como entrada, devuelva todas las palabras
@@ -206,52 +212,57 @@
 
 // TIP: No utilices bucles
 
-// const shout = (...strings) =>
-//   strings.reduce((acc, string) => `${acc} ${string.toUpperCase()}! `, "");
+const shout = (...strings) =>
+  strings.reduce((acc, string) => `${acc} ${string.toUpperCase()}! `, "");
 
-// console.log(shout("hola", "adios", "bienvenido", "hasta luego"));
+console.log(shout("hola", "adios", "bienvenido", "hasta luego"));
 
 // Lista de la compra
 // Dada la siguiente lista de la compra:
 
-// const shoppingCart = [
-//     { category: "Frutas y Verduras", product: "Lechuga", price: 0.8, units: 1 },
-//     { category: "Carne y Pescado", product: "Pechuga pollo", price: 3.75, units: 2 },
-//     { category: "Droguería", product: "Gel ducha", price: 1.15, units: 1 },
-//     { category: "Droguería", product: "Papel cocina", price: 0.9, units: 3 },
-//     { category: "Frutas y Verduras", product: "Sandía", price: 4.65, units: 1 },
-//     { category: "Frutas y Verduras", product: "Puerro", price: 4.65, units: 2 },
-//     { category: "Carne y Pescado", product: "Secreto ibérico", price: 5.75, units: 2 },
-// ];
+const shoppingCart = [
+    { category: "Frutas y Verduras", product: "Lechuga", price: 0.8, units: 1 },
+    { category: "Carne y Pescado", product: "Pechuga pollo", price: 3.75, units: 2 },
+    { category: "Droguería", product: "Gel ducha", price: 1.15, units: 1 },
+    { category: "Droguería", product: "Papel cocina", price: 0.9, units: 3 },
+    { category: "Frutas y Verduras", product: "Sandía", price: 4.65, units: 1 },
+    { category: "Frutas y Verduras", product: "Puerro", price: 4.65, units: 2 },
+    { category: "Carne y Pescado", product: "Secreto ibérico", price: 5.75, units: 2 },
+];
 
-// // A. Obtén una nueva lista donde aparezca el IVA (21%) de cada producto.
+// A. Obtén una nueva lista donde aparezca el IVA (21%) de cada producto.
 
-// const addVat = (vat, products) => products.map(product => ({ ...product, vat: product.price*0.21 }));
+const addVat = (vat, products) =>
+  products.map((product) => ({ ...product, vat: product.price * 0.21 }));
 
-// console.log(addVat('vat', shoppingCart));
+console.log(addVat("vat", shoppingCart));
 
-// // B. Ordena la lista de más a menos unidades.
+// B. Ordena la lista de más a menos unidades.
 
-// const sortCart = products => products.sort((a, b) => (a.units > b.units ? -1 : 1));
+const sortCart = (products) =>
+  products.sort((a, b) => (a.units > b.units ? -1 : 1));
 
-// console.log(sortCart(shoppingCart));
+console.log(sortCart(shoppingCart));
 
-// // C. Obtén el subtotal gastado en droguería.
+// C. Obtén el subtotal gastado en droguería.
 
-// const getSubTotal = products => products.reduce((acc, product) => {
-//     if (product.category === 'Droguería') acc += product.price * product.units;
-//     return acc;
-// }, 0);
+const getSubTotal = (products) =>
+  products.reduce((acc, product) => {
+    if (product.category === "Droguería") acc += product.price * product.units;
+    return acc;
+  }, 0);
 
-// console.log(getSubTotal(shoppingCart));
+console.log(getSubTotal(shoppingCart));
 
 // // D. Obtén la lista por consola en formato "Producto -> Precio Total €" y ordenada por categoría.
 
 // //TIP: No utilices bucles.
 
-// const listProducts = products =>
-//     products
-//         .sort((a, b) => (a.category > b.category ? 1 : -1))
-//         .map(product => console.log(`${product.product} -> ${product.price * product.units}€`));
+const listProducts = (products) =>
+  products
+    .sort((a, b) => (a.category > b.category ? 1 : -1))
+    .map((product) =>
+      console.log(`${product.product} -> ${product.price * product.units}€`)
+    );
 
-// listProducts(shoppingCart);
+listProducts(shoppingCart);
